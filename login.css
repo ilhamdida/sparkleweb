@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  background-color: rgb(226, 229, 233);
+}
+
+.login {
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 0.5rem;
+}
+.login input {
+  font-size: 16px;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  display: inline;
+  margin-top: 1rem;
+  outline: none;
+  border: 1px solid gray;
+}
+.login a {
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 0.5rem;
+  color: blue;
+}
+.login button {
+  margin-top: 0.75rem;
+  display: inline;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.login button:hover {
+  background-color: rgb(181, 181, 181);
+}/*# sourceMappingURL=login.css.map */
