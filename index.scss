@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+
+    .nav-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+
+        img {
+            width: 24px;
+            aspect-ratio: 1/1;
+        }
+        h2 {
+            font-size: 16px;
+        }
+
+    }
+    .nav-items {
+        ul {
+            display: none;
+        }
+    }
+
+    .nav-login {
+        a {
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border-radius: 7%;
+            font-size: 12px;
+            &:hover {
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.content {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 90%;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        margin: 0 auto;
+        .tag1 {
+            display: inline;
+            color: orange;
+        }
+    }
+
+    
+    img {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .aboutme {
+        margin-top: 3rem;
+        .aboutme-head {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            span {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
+            hr {
+                display: block;
+                width: 15%;
+                height: 3px;
+                background-color: orange;
+                border: none;
+            }
+
+            h2 {
+                margin-top: 2rem;
+                font-weight: 200;
+                font-size: 2rem;
+                letter-spacing: -3px;
+            }
+
+            h3 {
+                color: orange;
+
+            }
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 14px;
+            color: rgb(97, 97, 97);
+            word-spacing: -2px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 2rem;
+            font-size: 22px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10rem;
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .content {
+        h1 {
+            font-size: 6rem;
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .nav {
+        padding: 1rem 3rem;
+        .nav-title {
+            gap: 1rem;
+            img {
+                display: none;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .nav-items {
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    a {
+                        padding: 1rem;
+                        color: black;
+                        text-decoration: none;
+                        font-size: 16px;
+                    }
+                }
+            }
+    
+        }
+
+        .nav-login {
+            a {
+                padding: 0.75rem 1.5rem;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .content {
+        margin-top: 10%;
+        h1 {
+            font-size: 7rem;
+            width: 60%;
+            text-align: center;
+        }
+
+        img {
+            margin-top: 10rem;
+        }
+
+        .aboutme {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .aboutme-head {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                width: 50%;
+                gap: 0;
+
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+                h2 {
+                    font-size: 2rem;
+                }
+                h3 {
+                    font-size:1.5rem;
+                }
+                hr {
+                    width: 100px;
+                    display: block;
+                }
+            }
+
+            .aboutme-text {
+                p {
+                    font-size: 1.5rem;
+                    width: 85%;
+                }
+            }
+        }
+    
+    }
+
+    
+
+}
+
+@media screen and (min-width:1200px) {
+    .content {
+        h1 {
+            font-size: 8rem;
+        }
+    }
+
+}
